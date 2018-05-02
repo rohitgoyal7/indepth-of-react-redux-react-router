@@ -1,0 +1,64 @@
+{
+  "name": "indepth-of-react-redux-react-router",
+  "version": "1.0.0",
+  "description": "The project covers the very in depth concepts of React, Redux and React router",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohitgoyal7/indepth-of-react-redux-react-router.git"
+  },
+  "author": "Rohit Goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitgoyal7/indepth-of-react-redux-react-router/issues"
+  },
+  "homepage": "https://github.com/rohitgoyal7/indepth-of-react-redux-react-router#readme",
+  "dependencies": {
+    "babel-preset-esnext": "^1.1.3",
+    "jquery": "^3.3.1",
+    "react": "16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/preset-stage-0": "^7.0.0-beta.38",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "eslint": "^4.12.0",
+    "eslint-config-fortech-react": "^1.0.2",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "install": "^0.10.4",
+    "jest": "^21.2.1",
+    "npm": "^5.6.0",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.1",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack --fix",
+    "dev": "webpack-dev-server --content-base src --inline --hot",
+    "test": "NODE_ENV=test jest --no-cache"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/test-config/test-setup.js"
+  }
+}

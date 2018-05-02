@@ -1,0 +1,22 @@
+{
+  "presets": [
+      [ "env",
+          {
+              "modules": false,
+              "useBuiltIns": "usage"
+          }
+      ],
+      "react",
+      "jest",
+      "es2017",
+      "latest",
+      "stage-2"
+        ],
+  "env": {
+      "test": {
+          "presets": ["react","stage-2"],
+          "plugins": ["transform-es2015-modules-commonjs"]
+      }
+
+  }
+}
