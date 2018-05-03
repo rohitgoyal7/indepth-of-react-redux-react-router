@@ -3,7 +3,7 @@ import React from "react";
 export default class MyFriends extends React.Component{
     render(){
         return(
-            <div className="col-sm-9"> 
+            <div className="col-sm-9 padding-top-28"> 
 	            <div className="input-group">
 	                <input type="text" className="form-control" placeholder="Search People.." />
 	                <span className="input-group-btn">
