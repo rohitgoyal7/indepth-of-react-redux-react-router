@@ -1,0 +1,27 @@
+html{
+	margin: 10px;
+}
+.login-form > div {
+    margin-bottom: 25px;
+}
+
+.login-form > div:last-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.iconmelon{
+	text-align: center;
+}
+.iconmelon img{
+	height: 120px;
+    margin-top: 50px;
+}
+.margin-top-zero{
+	margin-top: 0;
+}
+.margin-top-25{
+	margin-top: 25px;
+}
+.row.content{
+	padding-top: 20px;
+}
