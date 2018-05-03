@@ -29,7 +29,7 @@ export default class Login extends React.Component{
 
                             <div className="form-group">
                                 <div className="col-sm-12 controls">
-                                    <Link to="/my-friends">
+                                    <Link to="/dashboard/people">
                                         <button className="btn btn-primary pull-right"><i className="glyphicon glyphicon-log-in"></i> Log in</button>                 
                                     </Link>
                                 </div>

@@ -1,27 +1,46 @@
 html{
-	margin: 10px;
+     margin: 10px;
 }
-.login-form > div {
-    margin-bottom: 25px;
+ body{
+    padding-top:30px;
 }
-
-.login-form > div:last-child {
-    margin-top: 10px;
-    margin-bottom: 10px;
+ .login-form > div {
+     margin-bottom: 25px;
 }
-.iconmelon{
-	text-align: center;
+ .login-form > div:last-child {
+     margin-top: 10px;
+     margin-bottom: 10px;
 }
-.iconmelon img{
-	height: 120px;
-    margin-top: 50px;
+ .iconmelon{
+     text-align: center;
 }
-.margin-top-zero{
-	margin-top: 0;
+ .iconmelon img{
+     height: 120px;
+     margin-top: 50px;
 }
-.margin-top-25{
-	margin-top: 25px;
+ .margin-top-zero{
+     margin-top: 0;
 }
-.row.content{
-	padding-top: 20px;
+ .margin-top-25{
+     margin-top: 25px;
+}
+ .row.content{
+     padding-top: 20px;
+}
+ .glyphicon-margin {
+     margin-bottom: 10px;
+    margin-right: 10px;
+}
+ small {
+     display: block;
+     line-height: 1.428571429;
+     color: #999;
+}
+.card.img-fluid{
+    border: 1px solid gray;
+    border-radius: 9px;
+    padding-top: 10px;
+}
+.card-img-top{
+    height: 120px;
 }

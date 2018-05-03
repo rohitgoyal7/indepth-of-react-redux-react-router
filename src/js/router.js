@@ -1,7 +1,7 @@
 import React from "react";
 import {HashRouter, Route} from "react-router-dom";
 import Login from "./pages/Login";
-import MyFriends from "./pages/MyFriends";
+import Dashboard from "./pages/Dashboard";
 
 export default class Router extends React.Component{
   render(){
@@ -15,8 +15,8 @@ export default class Router extends React.Component{
                 component={Login}
             />
             <Route 
-                path="/my-friends" 
-                component={MyFriends}
+                path="/dashboard" 
+                component={Dashboard}
             />
           </div>
         </HashRouter>
