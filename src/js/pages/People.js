@@ -1,7 +1,11 @@
 import React from "react";
+import {Link, Route} from "react-router-dom";
+import SelectedPerson from '../components/SelectedPerson';
+
 
 export default class MyFriends extends React.Component{
     render(){
+    	let match = this.props.match;
         return(
             <div className="col-sm-9 padding-top-28"> 
 	            <div className="input-group">
@@ -15,17 +19,11 @@ export default class MyFriends extends React.Component{
 	            <h4 className="margin-top-25"><small>People Nearby</small></h4>
 	            <hr/>
 	            <div className="list-group col-sm-6">
-				 	<span className="list-group-item active">John Doe</span>
-				 	<span className="list-group-item">Mark Ally</span>
-					<span className="list-group-item">Joe Ted</span>
+				 	<Link to={`${match.url}/John`}><span className="list-group-item active">John Doe</span></Link>
+				 	<Link to={`${match.url}/Mark`}><span className="list-group-item">Mark Ally</span></Link>
+				 	<Link to={`${match.url}/Joe`}><span className="list-group-item">Joe Ted</span></Link>
 				</div>
-				<div className="card img-fluid col-sm-6">
-				    <img className="card-img-top" src="./images/user-icon.png" alt="user icon"/>
-				    <div className="card-img-overlay">
-				      <h4 className="card-title">John Doe</h4>
-				      <p className="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-				    </div>
-				  </div>
+				<Route path={`${match.url}/:id(John)`} component={SelectedPerson}/>
 	        </div>
         )
     }

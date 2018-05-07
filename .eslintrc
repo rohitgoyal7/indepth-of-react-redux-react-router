@@ -74,6 +74,9 @@
 	  "react/jsx-indent-props":0,
 	  "react/jsx-closing-tag-location":0,
 	  "react/no-children-prop":0,
-	  "react/jsx-closing-bracket-location":0
+	  "react/jsx-closing-bracket-location":0,
+	  "jsx-a11y/label-has-for":0,
+	  "operator-assignment":0,
+	  "import/no-duplicates":0
 	}	
 }
