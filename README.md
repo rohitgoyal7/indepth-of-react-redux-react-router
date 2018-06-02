@@ -20,7 +20,7 @@ npm run dev
  4. Private Routes using Redirect
  5. Custom Link
  6. Route 
- 	*	render - takes props [along with history and location]
+ 	* render - takes props [along with history and location]
  	*	children - takes match [along with history and location]
  	*	component
 
