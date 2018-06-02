@@ -23,5 +23,9 @@ npm run dev
  	* render - takes props [along with history and location]
  	* children - takes match [along with history and location]
  	* component
+ 7. Prompt - preventing transitions - take location as prop
+ 8. No Match/ Ambiguous Routes
+ 	* Use <Route> with no Route
+ 	* <Redirect/> - will always match
 
 ```
