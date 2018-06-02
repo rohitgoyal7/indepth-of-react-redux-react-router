@@ -40,5 +40,6 @@ of application but with react router v4, run time routing is feasible
  8. No Match/ Ambiguous Routes
  	* Use <Route> with no Route
  	* <Redirect/> - will always match
+ 9. <ScrollToTop/> using withRouter
 
 ```
