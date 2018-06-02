@@ -12,6 +12,13 @@ npm run dev
 ```
 
 
+## Why React Router v4
+```
+Dynamic Routing- earlier routes need to be configured before the start
+of application but with react router v4, run time routing is feasible
+```
+
+
 ### Things covered
 ```
  1. Basic Routing - Route and Link
