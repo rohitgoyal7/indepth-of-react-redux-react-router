@@ -21,7 +21,7 @@ npm run dev
  5. Custom Link
  6. Route 
  	* render - takes props [along with history and location]
- 	*	children - takes match [along with history and location]
- 	*	component
+ 	* children - takes match [along with history and location]
+ 	* component
 
 ```
