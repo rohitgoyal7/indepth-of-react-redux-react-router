@@ -18,6 +18,12 @@ Dynamic Routing- earlier routes need to be configured before the start
 of application but with react router v4, run time routing is feasible
 ```
 
+## Router Three Basic Components
+```
+ 1. Router - provides specialized history object
+ 2. Route/Switch
+ 3. Link/NavLink - Navlink is special kind of Link that can style itself as active
+```
 
 ### Things covered
 ```
