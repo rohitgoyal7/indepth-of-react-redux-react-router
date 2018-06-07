@@ -8,7 +8,7 @@ export default class PrivateRoute extends React.Component{
     	return (
     		<Route 
 	    		{...rest}
-	    		render={()=> {
+	    		render={({match})=> {
 	    			if(window.localStorage && window.localStorage.userName){
 	    				return <Component {...props}/>
 	    			}

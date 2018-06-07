@@ -77,6 +77,11 @@
 	  "react/jsx-closing-bracket-location":0,
 	  "jsx-a11y/label-has-for":0,
 	  "operator-assignment":0,
-	  "import/no-duplicates":0
+	  "import/no-duplicates":0,
+	  "react/no-unescaped-entities":0,
+	  "react/jsx-first-prop-new-line":0,
+	  "react/jsx-max-props-per-line":0,
+	  "jsx-a11y/anchor-is-valid":0,
+	  "jsx-a11y/no-noninteractive-element-interactions":0
 	}	
 }

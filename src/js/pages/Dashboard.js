@@ -2,6 +2,7 @@ import React from "react";
 import {Link, Route, withRouter, Prompt} from "react-router-dom";
 import People from './People';
 import Profile from './Profile';
+import ReactJs from './ReactJs';
 import CustomLink from '../components/CustomLink';
 
 class Dashboard extends React.Component{
@@ -29,6 +30,7 @@ class Dashboard extends React.Component{
 			                <ul className="nav nav-pills nav-stacked">
 			                	<CustomLink to={`${match.url}/people`} label="People Nearby"/>
 			                	<CustomLink to={`${match.url}/profile`} label="Profile"/>
+			                	<CustomLink to={`${match.url}/reactjs`} label="React16.4 Core Concepts"/>
 			                	<CustomLink to="/" isExact={true} label="Log out"/>
 			                	<li>
 			                		<div className="checkbox">
@@ -46,12 +48,16 @@ class Dashboard extends React.Component{
 			                path={`${match.url}/profile`}
 			                component={Profile}
 			            />
+			            <Route 
+			                path={`${match.url}/reactjs`}
+			                component={ReactJs}
+			            />
 			            
 			        </div>
 			    </div>
 			    <Prompt
 			    	when={isPrompt}
-			    	 message={location =>
+			    	 message={(location) =>
 			            `Are you sure you want to go to log out and go to ${location.pathname}`
 			          }
 			    />

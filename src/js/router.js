@@ -1,14 +1,15 @@
 import React from "react";
-import {HashRouter, Route, Switch, Redirect} from "react-router-dom";
+import {HashRouter, Route, Switch, Redirect, BrowserRouter, StaticRouter} from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default class Router extends React.Component{
   render(){
     return(
       <div>
-        <HashRouter>
+        <HashRouter basename="/my-app">
           <div>
             <Switch>
               <Route 
@@ -26,6 +27,7 @@ export default class Router extends React.Component{
                   render={()=> <div>Sorry, not page found for this Route!!!</div>}
               />
             </Switch>
+            <ScrollToTop/>
           </div>
         </HashRouter>
       </div>

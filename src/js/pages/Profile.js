@@ -23,20 +23,7 @@ export default class Profile extends React.Component{
 			                            <br />
 			                            <i className="glyphicon glyphicon-gift glyphicon-margin"></i>June 02, 1988</p>
 			         
-			                        <div className="btn-group">
-			                            <button type="button" className="btn btn-primary">
-			                                Social</button>
-			                            <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-			                                <span className="caret"></span><span className="sr-only">Social</span>
-			                            </button>
-			                            <ul className="dropdown-menu" role="menu">
-			                                <li>Twitter</li>
-			                                <li>Google</li>
-			                                <li>Facebook</li>
-			                                <li className="divider"></li>
-			                                <li>Github</li>
-			                            </ul>
-			                        </div>
+			                       
 			                    </div>
 			                </div>
 			            </div>

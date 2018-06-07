@@ -8,7 +8,8 @@ export default class CustomLink extends React.Component{
     		<Route
     			path={props.to}
     			exact={props.isExact}
-    			children={({match})=>{
+    			children={(ref)=>{
+                    let match = ref.match;
     				return (
     					<li className={match ? "active" : ""}>
     						<Link to={props.to}>{props.label}</Link>
