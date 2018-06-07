@@ -11,7 +11,6 @@ const plugins = [
     } ),
 ];
 
-
 module.exports = {
     context: path.join( __dirname, "src" ),
     devtool: dev ? "source-map" : "source-map",
