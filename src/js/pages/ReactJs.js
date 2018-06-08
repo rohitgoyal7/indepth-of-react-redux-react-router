@@ -6,7 +6,12 @@ import WhyNoIndexAsKey from '../components/WhyNoIndexAsKey';
 import UsingRefsWisely from '../components/UsingRefsWisely';
 import StateVsStateless from '../components/StateVsStateless';
 import ControlledVsUncontrolled from '../components/ControlledVsUncontrolled';
-
+import PureComponent from '../components/PureComponent';
+import PureComponentPitfall from '../components/PureComponentPitfall';
+import Transaction from '../components/Transaction';
+// import PropTypes from '../components/PropTypes';
+// import Fragment from '../components/Fragment';
+// import ForceUpdate from '../components/Transaction';
 
 export default class Profile extends React.Component{
 	constructor(props){
@@ -56,6 +61,21 @@ export default class Profile extends React.Component{
 				id:9,
 				name:'Transaction',
 				url: 'transaction'
+			},
+			{
+				id:10,
+				name:'PropTypes',
+				url: 'propTypes'
+			},
+			{
+				id:11,
+				name:'Fragment',
+				url: 'fragment'
+			},
+			{
+				id:12,
+				name:'ForceUpdate',
+				url: 'forceUpdate'
 			}]
 		};
 	}
@@ -113,6 +133,9 @@ export default class Profile extends React.Component{
 								<Route exact={true} path={`${match.url}/usingRefsWisely`} component={UsingRefsWisely}/>
 								<Route exact={true} path={`${match.url}/stateVsStateless`} component={StateVsStateless}/>
 								<Route exact={true} path={`${match.url}/controlledVsUncontrolled`} component={ControlledVsUncontrolled}/>
+								<Route exact={true} path={`${match.url}/pureComponent`} component={PureComponent}/>
+								<Route exact={true} path={`${match.url}/pureComponentPitfall`} component={PureComponentPitfall}/>
+								<Route exact={true} path={`${match.url}/transaction`} component={Transaction}/>
 								<Redirect exact={true} from={`${match.url}`} to={`${match.url}/whyVirtualDOM`}/>
 							</Switch>
 							

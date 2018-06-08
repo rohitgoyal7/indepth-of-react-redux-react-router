@@ -93,7 +93,7 @@ strong{
 #why-no-jquery #i-am-a-list, #why-no-index-as-key #i-am-a-list{
     padding: 15px 0 15px 0px;
 }
-#why-no-jquery .btn {
+#why-no-jquery .btn, #pure-component .btn, #pure-component-pitfall .btn {
     margin-right: 10px;
 }
 #why-no-index-as-key #i-am-a-list li input{
@@ -102,4 +102,25 @@ strong{
 }
 #using-refs-wisely input{
     margin: 15px 0px 15px 0px;
+}
+#pure-component div, #pure-component-pitfall div, #transaction div{
+    padding: 10px 0 30px 0;
+}
+#pure-component-pitfall #parent{
+    padding: 10px;
+    background-color: #d9e7f4;
+}
+#transaction #parent{
+    padding: 10px;
+    background-color: #d9e7f4;
+}
+
+.child-component{
+    background: #b1c3d3b8;
+    margin: 10px 0 10px 0;
+    padding: 10px !important;
+}
+.grand-child-component{
+    background: #94a3b0b8;
+    padding: 10px !important;
 }
