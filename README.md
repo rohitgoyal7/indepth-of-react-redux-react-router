@@ -60,5 +60,18 @@ of application but with react router v4, run time routing is feasible
  4. Using Refs Wisely
  5. State vs Stateless Componentns
  6. Controlled vs Uncontrolled Inputs
+ 7. Pure Component
+ 8. Pure Component Pitfall
+ 9. Transaction
+ 10. PropTypes
+ 11. Fragment
+ 12. Force Update
+ 13. Exposing Refs
+ 14. Event Binding
+ 15. Composition
+ 16. Error Boundaries
+ 17. Portal
+ 18. Context
+ 19. Higher Orde Components
 
 ```
