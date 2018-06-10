@@ -72,6 +72,6 @@ of application but with react router v4, run time routing is feasible
  16. Error Boundaries
  17. Portal
  18. Context
- 19. Higher Orde Components
+ 19. Higher Order Components
 
 ```
