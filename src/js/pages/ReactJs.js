@@ -9,14 +9,23 @@ import ControlledVsUncontrolled from '../components/ControlledVsUncontrolled';
 import PureComponent from '../components/PureComponent';
 import PureComponentPitfall from '../components/PureComponentPitfall';
 import Transaction from '../components/Transaction';
-// import PropTypes from '../components/PropTypes';
-// import Fragment from '../components/Fragment';
-// import ForceUpdate from '../components/Transaction';
+import PropTypes from '../components/PropTypes';
+import Fragment from '../components/Fragment';
+import ForceUpdate from '../components/ForceUpdate';
+import EventBinding from '../components/EventBinding';
+import ExposingRefs from '../components/ExposingRefs';
+import CompositionVsInheritance from '../components/CompositionVsInheritance';
+import ErrorBoundaries from '../components/ErrorBoundaries';
+import Context from '../components/Context';
+import HigherOrderComponent from '../components/HigherOrderComponent';
+import Portal from '../components/Portal';
+import Poc from '../components/Poc';
 
 export default class Profile extends React.Component{
 	constructor(props){
 		super(props);
 		this.state= {
+			loading: true,
 			tabs : [{
 				id:1,
 				name:'Why Virtual DOM ?',
@@ -76,6 +85,46 @@ export default class Profile extends React.Component{
 				id:12,
 				name:'ForceUpdate',
 				url: 'forceUpdate'
+			},
+			{
+				id:13,
+				name:'Exposing Refs',
+				url: 'exposingRefs'
+			},
+			{
+				id:14,
+				name:'Event Binding',
+				url: 'eventBinding'
+			},
+			{
+				id:15,
+				name:'Compositon vs Inheritance',
+				url: 'compositionVsInheritance'
+			},
+			{
+				id:16,
+				name:'Error Boundaries',
+				url: 'errorBoundaries'
+			},
+			{
+				id:17,
+				name:'Portal',
+				url: 'portal'
+			},
+			{
+				id:18,
+				name:'Context',
+				url: 'context'
+			},
+			{
+				id:19,
+				name:'Higher Order Components',
+				url: 'higherOrderComponent'
+			},
+			{
+				id:20,
+				name:'POC',
+				url: 'poc'
 			}]
 		};
 	}
@@ -93,6 +142,20 @@ export default class Profile extends React.Component{
 	}
 
 	selectTab(id){
+		if(id == 19){
+			this.setState((prevState,props)=>{
+				return {
+					loading : true
+				}
+			});
+			setTimeout(()=>{
+				this.setState((prevState,props)=>{
+					return {
+						loading : false
+					}
+				});
+			},2000)
+		}
 		if(this.state.id == id){
 			return;
 		}
@@ -105,6 +168,8 @@ export default class Profile extends React.Component{
     render(){
     	let tabs = this.state.tabs;
     	let match = this.props.match;
+    	let loading = this.state.loading;
+    	let HOC = HigherOrderComponent(Fragment)({loading: loading});
         return(
             <div className="reactjs container padding-top-28">
 			    <div className="row">
@@ -126,6 +191,7 @@ export default class Profile extends React.Component{
 			               	 	})
 			               	 }
 							</ul>
+							<hr/>
 							<Switch>
 								<Route exact={true} path={`${match.url}/whyVirtualDOM`} component={WhyVirtualDOM}/>
 								<Route exact={true} path={`${match.url}/whyNoJquery`} component={WhyNoJquery}/>
@@ -136,6 +202,24 @@ export default class Profile extends React.Component{
 								<Route exact={true} path={`${match.url}/pureComponent`} component={PureComponent}/>
 								<Route exact={true} path={`${match.url}/pureComponentPitfall`} component={PureComponentPitfall}/>
 								<Route exact={true} path={`${match.url}/transaction`} component={Transaction}/>
+								<Route exact={true} path={`${match.url}/propTypes`} component={PropTypes}/>
+								<Route exact={true} path={`${match.url}/fragment`} component={Fragment}/>
+								<Route exact={true} path={`${match.url}/forceUpdate`} component={ForceUpdate}/>
+								<Route exact={true} path={`${match.url}/eventBinding`} component={EventBinding}/>
+								<Route exact={true} path={`${match.url}/exposingRefs`} component={ExposingRefs}/>
+								<Route exact={true} path={`${match.url}/compositionVsInheritance`} component={CompositionVsInheritance}/>
+								<Route exact={true} path={`${match.url}/errorBoundaries`} component={ErrorBoundaries}/>
+								<Route exact={true} path={`${match.url}/portal`} component={Portal}/>
+								<Route exact={true} path={`${match.url}/context`} component={Context}/>
+								<Route exact={true} path={`${match.url}/higherOrderComponent`} component={HOC}/>
+								<Route exact={true} path={`${match.url}/poc`} render={(props)=>(
+											<div id="poc">
+												<div><strong>POC's</strong></div>
+												<div><b>Check console to see results...</b></div>
+												<Poc {...props}/>
+											</div>
+									)}/>
+								
 								<Redirect exact={true} from={`${match.url}`} to={`${match.url}/whyVirtualDOM`}/>
 							</Switch>
 							

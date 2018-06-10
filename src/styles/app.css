@@ -93,7 +93,7 @@ strong{
 #why-no-jquery #i-am-a-list, #why-no-index-as-key #i-am-a-list{
     padding: 15px 0 15px 0px;
 }
-#why-no-jquery .btn, #pure-component .btn, #pure-component-pitfall .btn {
+#why-no-jquery .btn, #pure-component .btn, #pure-component-pitfall .btn, #event-binding .btn{
     margin-right: 10px;
 }
 #why-no-index-as-key #i-am-a-list li input{
@@ -103,14 +103,13 @@ strong{
 #using-refs-wisely input{
     margin: 15px 0px 15px 0px;
 }
-#pure-component div, #pure-component-pitfall div, #transaction div{
+#pure-component div, #pure-component-pitfall div, #transaction div, #propTypes div, #fragment div,
+#forceUpdate div, #exposing-refs div, #error-boundaries div, #context div, #hoc div, #portal div, #poc div{
     padding: 10px 0 30px 0;
 }
-#pure-component-pitfall #parent{
-    padding: 10px;
-    background-color: #d9e7f4;
-}
-#transaction #parent{
+#pure-component-pitfall #parent, #transaction #parent, #propTypes #parent, #fragment #parent,
+#exposing-refs #parent, #composition-vs-inheritance #parent, #error-boundaries #parent, #context #parent,
+#portal div{
     padding: 10px;
     background-color: #d9e7f4;
 }
@@ -123,4 +122,16 @@ strong{
 .grand-child-component{
     background: #94a3b0b8;
     padding: 10px !important;
+}
+#composition-vs-inheritance div.gap{
+    padding: 10px 0 30px 0;
+}
+#i-am-a-portal{
+    background-color: #aaaaf6;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #d0cdcd !important;
 }

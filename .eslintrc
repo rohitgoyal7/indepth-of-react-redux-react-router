@@ -82,6 +82,9 @@
 	  "react/jsx-first-prop-new-line":0,
 	  "react/jsx-max-props-per-line":0,
 	  "jsx-a11y/anchor-is-valid":0,
-	  "jsx-a11y/no-noninteractive-element-interactions":0
+	  "jsx-a11y/no-noninteractive-element-interactions":0,
+	  "no-restricted-syntax":0,
+	  "no-labels":0,
+	  "no-unused-labels":0
 	}	
 }
