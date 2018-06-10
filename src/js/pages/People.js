@@ -69,7 +69,7 @@ export default class MyFriends extends React.Component{
 				 					 	<NavLink to={`${match.url}/4`} activeClassName="activeuser"><span className="list-group-item">Don Tedd</span></NavLink>*/}
 					{
 						people.map((person) => {
-							if(person.name.indexOf(userInput)> -1){
+							if(person.name.toLowerCase().includes(userInput)){
 								return (
 									<NavLink to={`${match.url}/${person.id}`} activeClassName="activeuser" key={person.id}>
 										<span className="list-group-item">{person.name}</span>
