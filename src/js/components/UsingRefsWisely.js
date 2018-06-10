@@ -42,7 +42,7 @@ export default UsingRefsWisely;
 
 
 
-
+// ref="name" and accessing via this.refs.name is deprecated
 
 // Refs should be used excessively since as per react everything must be managed from state
 // and with refs, we might end up with writing jquery
